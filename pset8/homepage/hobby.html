@@ -1,0 +1,89 @@
+<!--Resume Section-->
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>Hobby</title>
+
+        <script>
+            document.addEventListener("click", function(){
+
+                document.querySelector(".FreeRes").addEventListener("click", function(){
+                    var input = document.querySelector("input");
+                    if (input.value == "Basketball" || input.value == "Swimming"|| input.value == "Hiking"){
+                        input.style.backgroundColor = "green";
+                        document.querySelector("#Free").innerHTML = "We like the same sport!";
+                    } else {
+                        input.style.backgroundColor = "red";
+                        document.querySelector("#Free").innerHTML = "That is an interesting hobby!";
+                    }
+                });
+            });
+
+        </script>
+
+    </head>
+<body>
+        <section class="section" id="resume">
+            <div class="container">
+                <h2 class="mb-5"><span class="text-danger">My</span> Hobbies</h2>
+                <div class="row">
+                    <div class="col-md-6 col-lg-6">
+                        <div class="card">
+                        <div class="card-header">
+                                <div class="mt-2">
+                                    <h4>Outdoor activites</h4>
+                                    <span class="line"></span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <hr>
+                                <h6 class="title text-danger">Basketball</h6>
+                                <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum recusandae, cupiditate ullam dolor ratione repellendus.aliquid repudiandae saepe!.</P>
+                                <hr>
+                                <h6 class="title text-danger">Swimming</h6>
+                                <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum recusandae, cupiditate ullam dolor ratione repellendus.aliquid repudiandae saepe!.</P>
+                                <hr>
+                                <h6 class="title text-danger">Hiking</h6>
+                                <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum recusandae, cupiditate ullam dolor ratione repellendus.aliquid repudiandae saepe!.</P>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6">
+                        <div class="card">
+                        <div class="card-header">
+                                <div class="mt-2">
+                                    <h4>Indoor activities</h4>
+                                    <span class="line"></span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <hr>
+                                <h6 class="title text-danger">Reading</h6>
+                                <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum recusandae, cupiditate ullam dolor ratione repellendus.aliquid repudiandae saepe!.</P>
+                                <hr>
+                                <h6 class="title text-danger">Movies</h6>
+                                <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum recusandae, cupiditate ullam dolor ratione repellendus.aliquid repudiandae saepe!.</P>
+                                <hr>
+                                <h6 class="title text-danger">Musics</h6>
+                                <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum recusandae, cupiditate ullam dolor ratione repellendus.aliquid repudiandae saepe!.</P>
+
+                            </div>
+                        </div>
+                    </div>
+
+                        <h3>Tell me what sport do you like!</h3>
+                        <input type = "text"></input>
+                        <button class = "FreeRes">Submit</button>
+                        <p id = "Free"> </p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
