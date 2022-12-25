@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+{% endblock %}
+
+{% block main %}
+    <div class="container">
+        <table class="table">
+            <tr>
+                <th>Symbol</th>
+                <th>Shares</th>
+                <th>Price</th>
+                <th>TOTAL</th>
+            </tr>
+            {% for stock in stocks %}
+                <tr>
+                    <td>{{ stock["stock"] }}</td>
+                    <td>{{ stock['quantity'] }}</td>
+                    <td>{{ "$" '%0.2f'|format(stock["price"]) }}</td>
+                    <td>{{ "$" '%0.2f'|format(stock["total"]) }}</td>
+                </tr>
+            {% endfor %}
+            <tr>
+                <td></td>
+                <td></td>
+                <th>Cash</th>
+                <td>{{ "$" '%0.2f'|format(cash) }}</td>
+            </tr>
+            <tr>
+                <th></th>
+                <th></th>
+                <th>TOTAL</th>
+                <td>{{ "$" '%0.2f'|format(total) }}</td>
+            </tr>
+        </table>
+    </div>
+{% endblock %}

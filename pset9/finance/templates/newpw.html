@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Set Up New Password
+{% endblock %}
+
+{% block main %}
+    <form action="/newpw" method="post">
+        <div class="mb-3">
+            <p> What is your new password?</p>
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="newpw" name="new_password" placeholder="new password" type="text">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="newpw" name="confirm_password" placeholder="new password" type="text">
+        </div>
+        <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
+{% endblock %}
