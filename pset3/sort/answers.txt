@@ -1,0 +1,11 @@
+sort1 uses: bubble sort
+
+How do you know?: It takes long time to sort the random data, but takes short time to sort sorted data.
+
+sort2 uses: merge sort
+
+How do you know?: It takes moderate time to all the data.
+
+sort3 uses: selection
+
+How do you know?: It takes long time to sort all the data.
